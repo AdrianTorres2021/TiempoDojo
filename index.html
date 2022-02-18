@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav-bar">
+                <div class="item-1">
+                    <h1 class="nav-title">DojoWheather</h1>
+                    <ul class="nav-links">
+                        <li><a onclick="alertFunction()" href="#" >Burbank</a></li>
+                        <li><a href="#" onclick="alertFunction()">Chicago</a></li>
+                        <li><a href="#" onclick="alertFunction()">Dallas</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="item-2">
+                <div class="content">
+                    <div class="item1">
+                        <p>San Jose </p>
+                        <form>
+                        <label>show temperature in </label>
+                                <select id="temperature" name="temperaturelist" onchange="convert(this)">
+                                <option>°C</option>
+                                <option>°F</option>
+                                </select>
+                        </form>
+                    </div>
+                    
+                        <div class="item2">
+                            Today
+                            <img src="assets/some_rain.png" alt="rainy day icon">
+                            <p>some rain</p>
+                            <span class="span-red" id="temp1">24</span>
+                            <span class="span-blue" id="temp2">18</span>
+                        </div>
+                        <div class="item3">
+                            Tomorrow
+                            <img src="assets/some_sun.png" alt="rainy day icon">
+                            <p>some sun</p>
+                            <span class="span-red" id="temp3">27</span>
+                            <span class="span-blue" id="temp4">19</span>
+                        </div>  
+                        <div class="item4">
+                            Friday
+                            <img src="assets/some_clouds.png" alt="cloud day icon">
+                            <p>some clouds</p>
+                            <span class="span-red" id="temp5">21</span>
+                            <span class="span-blue" id="temp6">16</span>
+                        </div>
+                        <div class="item5">
+                            Saturday
+                            <img src="assets/some_sun.png" alt="sunny day icon">
+                            <p>some sun</p>
+                            <span class="span-red" id="temp7">26</span>
+                            <span class="span-blue" id="temp8">21</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cookies">
+                <img src="assets/cookie.png" alt="cookie icon">
+                <h1>Stop! cookie time</h1>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></a></p>
+                <button onclick="removeFunction()">I Accept</button>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
